@@ -1,0 +1,115 @@
+body{
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Work Sans', sans-serif;
+}
+#content{
+    width: 50vw;
+    display:flex;
+    flex-wrap: wrap;
+    overflow-wrap: normal;
+    justify-content: space-evenly;
+}
+.item{
+    width: 35%;
+    min-width: 350px;
+    border:2px solid black;
+    visibility: visible;
+    opacity: 1;
+    border-radius: 5px;
+    margin:10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    animation: item 3s;
+    animation-fill-mode: forwards;
+}
+img{
+    height:100px;
+    width:100px;
+    
+}
+.price{
+    font-size: 20px;
+    font-weight: 900;
+}
+header{
+    position:relative;
+    top:-10px;
+    width: 100vw;
+    color:white;
+    text-align: center;
+    background-color: orange;
+    font-size: 75px;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+.rating{
+    text-align: center;
+    background-color:orange;
+    height: 30px;
+    width: 100%;
+}
+input{
+    font-family: 'Work Sans', sans-serif;
+    margin-bottom: 7%;
+    color:dimgray;
+    width: 500px;
+    height: 30px;
+    border:none;
+    border-radius:5px;
+    background-color: lightgray;
+}
+a{
+    text-decoration: none;
+}
+button{
+    background-color: white;
+    border-radius:5px;
+    cursor: pointer;
+    border:none;
+    font-size: 20px;
+    height: 30px;
+    position:relative;
+    left:-5px;
+}
+#categories{
+    display:flex;
+    max-width: 35%;
+    min-width: 35%;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.catg{
+    font-size: 17px;
+    font-weight: 800;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:white;
+    height: 200px;
+    width: 200px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:cover;
+}
+#menC{
+    background-image: url("https://images.unsplash.com/photo-1593030761757-71fae45fa0e7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1480&q=80");
+}
+#womenC{
+    background-image: url("https://images.unsplash.com/photo-1525507119028-ed4c629a60a3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80");
+}
+#Jewelry{
+    background-image: url("https://images.unsplash.com/photo-1631965004544-1762fc696476?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80");
+}
+#Electronics{
+    background-image: url("https://images.unsplash.com/photo-1550009158-9ebf69173e03?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1501&q=80");
+}
+@keyframes item{
+    0% {visibility: hidden;opacity: 0;}
+    100% {visibility: visible;opacity: 1;}
+}
